@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0b0d10;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(124, 107, 255, 0.35);
+}
+
+@layer utilities {
+  .grid-shell {
+    @apply mx-auto w-[min(1200px,92vw)];
+  }
+
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur;
+  }
+}
